@@ -10,3 +10,4 @@ This is	the end	of testing.txt
 
 I added this file from a new clone!
 Now I added a new line!
+I added this line from the GitHub interface!
