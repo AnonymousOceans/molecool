@@ -1,5 +1,11 @@
 """Visualizes molecules and puts bonds into histogram chart for the rest of the module."""
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
+from .atom_data import atom_colors
+
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
     # Draw a picture of a molecule using matplotlib.
 

@@ -1,5 +1,7 @@
 """Measuring angles and distances for the rest of the package."""
 
+import numpy as np
+
 """Calculate the distance between two points.
 
     Parameters
