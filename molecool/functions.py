@@ -57,8 +57,10 @@ def zen(with_attribution=True):
 
 def calculate_distance(pointA, pointB):
     # This function calculates the distance between two points given as numpy arrays.
+
     distance = (pointA - pointB)
     finaldistance=np.linalg.norm(distance)
+
     return finaldistance
 
 def open_pdb(file_location):
