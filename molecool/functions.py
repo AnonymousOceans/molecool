@@ -58,6 +58,26 @@ def zen(with_attribution=True):
 def calculate_distance(pointA, pointB):
     # This function calculates the distance between two points given as numpy arrays.
 
+    """Calculate the distance between two points.
+
+    Parameters
+    ----------
+    pointA, pointB : np.ndarray
+        The coordinates of each point.
+
+    Returns
+    -------
+    distance : float
+        The distance between the two points.
+    
+    Examples
+    --------
+    >>> point1 = np.array([0, 0, 0])
+    >>> point2 = np.array([0, 0.1, 0])
+    >>> calculate_distance(point1, point2)
+    0.1
+    """
+
     distance = (pointA - pointB)
     finaldistance=np.linalg.norm(distance)
 
