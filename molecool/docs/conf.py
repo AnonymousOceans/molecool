@@ -17,7 +17,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-import molecool
+import molecool.functions as functions
 
 
 # -- Project information -----------------------------------------------------
@@ -43,6 +43,7 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'autoapi.extension',
     'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
@@ -51,6 +52,18 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
 ]
+
+autoapi_dirs = ['../molecool']
+autoapi_ignore = ["*/tests/*",
+                  "*_version.py"]
+                  
+autoapi_options = ['members', 
+		'undoc-members', 
+		#'private-members', 
+		#'special-members', 
+		'show-inheritance', 
+		'show-module-summary', 
+		'imported-members']
 
 autosummary_generate = True
 napoleon_google_docstring = False
