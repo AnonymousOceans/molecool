@@ -34,7 +34,7 @@ def calculate_angle(rA, rB, rC, degrees=False):
     else:
         return theta
     
-def calculate_distance(pointA, pointB):
+def calculate_distance(pointA: np.ndarray, pointB: np.ndarray) -> float:
     # This function calculates the distance between two points given as numpy arrays.
 
     """Calculate the distance between two points.

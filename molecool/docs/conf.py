@@ -44,7 +44,7 @@ release = ''
 # ones.
 extensions = [
     'autoapi.extension',
-    'sphinx.ext.autosummary',
+    # 'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
@@ -65,7 +65,7 @@ autoapi_options = ['members',
 		'show-module-summary', 
 		'imported-members']
 
-autosummary_generate = True
+# autosummary_generate = True
 napoleon_google_docstring = False
 napoleon_use_param = False
 napoleon_use_ivar = True

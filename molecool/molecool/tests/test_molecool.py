@@ -7,7 +7,7 @@ import sys
 
 import pytest
 
-import molecool
+import molecool.functions as functions
 
 
 def test_molecool_imported():
