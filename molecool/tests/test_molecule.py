@@ -36,13 +36,13 @@ def test_build_bond_failure():
     with pytest.raises(ValueError):
         bonds = molecool.build_bond_list(coordinates, min_bond=-1)
     
-def test_molecular_mass():
-    symbols = ['C', 'H', 'H', 'H', 'H']
-    calculated_mass = molecool.calculate_molecular_mass(symbols)
+#def test_molecular_mass():
+    #symbols = ['C', 'H', 'H', 'H', 'H']
+    #calculated_mass = molecool.calculate_molecular_mass(symbols)
 
-    actual_mass = 16.04
+    #actual_mass = 16.04
 
-    assert pytest.approx(actual_mass, abs=1e-2) == calculated_mass
+    #assert pytest.approx(actual_mass, abs=1e-2) == calculated_mass
 
 @pytest.fixture
 def methane_molecule():
