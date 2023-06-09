@@ -182,6 +182,10 @@ def bond_histogram(bond_list, save_location=None, dpi=300, graph_min=0, graph_ma
 def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
     
     # Find the bonds in a molecule (set of coordinates) based on distance criteria.
+
+    if min_bond < 0:
+        raise ValueError("Invalid minimum bond distance entered! Minimum bond distance must be greater than zero!")
+     
     bonds = {}
     num_atoms = len(coordinates)
 
@@ -208,3 +212,4 @@ atom_colors = {
 if __name__ == "__main__":
     # Do something if this file is invoked on its own
     print(canvas())
+

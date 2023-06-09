@@ -9,6 +9,10 @@ dependencies:
   - python
   - pip
 
+  # Package Dependencies
+  - numpy
+  - matplotlib
+
     # Testing
   - pytest
   - pytest-cov
